@@ -11,10 +11,10 @@ export default {
         inter: ['inter', 'sans-serif']
       },
       backgroundImage: {
-        "header-bg": "url('src/images/Rectangle_6.png')",
-        "home-bg": "url('src/images/Hero Bg.png')",
-        "grid1_bg": "url('src/images/Frame_2.png')",
-        "grid4_bg": "url('src/images/image_1.png')",
+        "header-bg": "url('/images/Rectangle_6.png')",
+        "home-bg": "url('/images/Hero Bg.png')",
+        "grid1_bg": "url('/images/Frame_2.png')",
+        "grid4_bg": "url('/images/image_1.png')",
       }
     },
   },

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import exploreBtn from '../images/explore btn.png'
-import requestBtn from '../images/request btn.png'
+import exploreBtn from '/images/explore btn.png'
+import requestBtn from '/images/request btn.png'
 
 const servicesText = [
   "Web Dev",
