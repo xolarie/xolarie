@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
+        inter: ['inter', 'sans-serif']
       },
       backgroundImage: {
         "header-bg": "url('src/images/Rectangle_6.png')",
