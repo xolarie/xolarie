@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import exploreBtn from '/images/explore btn.png'
-import requestBtn from '/images/request btn.png'
+import exploreBtn from "/images/explore btn.png";
+import requestBtn from "/images/request btn.png";
 
 const servicesText = [
   "Web Dev",
@@ -33,8 +33,15 @@ const Home = () => {
       >
         <div className="grid grid-cols-2 space-x-5">
           <div className="relative">
-            {/* <div className="absolute bg-gradient-to-r from-purple-600 to-yellow-500">h111</div> */}
-            <div className="overflow-hidden z-20 h-[400px] w-[40vw] rounded-3xl bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white">
+            <div
+              className="overflow-hidden z-20 h-[400px] w-[40vw] bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white"
+              style={{
+                border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
+                background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
+                backdropFilter: "blur(10px)", // Blur effect
+              }}
+            >
               Innovative <br />
               solutions in
               <br />
@@ -78,42 +85,72 @@ const Home = () => {
               </div>
               to drive growth and engagement
               <div className="text-sm font-inter font-light mt-2">
-              <p>Partner with Xolarie to create intuitive, scalable solutions that drive results and enhance user engagement.</p>
+                <p>
+                  Partner with Xolarie to create intuitive, scalable solutions
+                  that drive results and enhance user engagement.
+                </p>
+              </div>
+              <div className="grid grid-cols-2 mt-10">
+                <button>
+                  <img src={exploreBtn} alt="" className="w-40 mr-auto" />
+                </button>
+                <button>
+                  <img src={requestBtn} alt="" className="w-40" />
+                </button>
+              </div>
             </div>
-            <div className="grid grid-cols-2 mt-10">
-              <button><img src={exploreBtn} alt="" className="w-40 mr-auto" /></button>
-              <button><img src={requestBtn} alt="" className="w-40" /></button>
-            </div>
-            </div>
-            
           </div>
 
           <div className="flex flex-col">
             <div className="flex flex-row">
-            <div
-              className="bg-grid1_bg bg-center bg-cover bg-no-repeat relative w-[250px] h-[190px] mr-3"
-              style={{
-                backgroundSize: "250px 190px",
-              }}
-            ></div>
-            <div className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md rounded-3xl px-6 max-w-[230px] max-h-[170px] mt-2 pt-2">
-              <h1 className="font-orbitron text-xl pb-2">Creative 
-              Solutions</h1>
-              <p className="text-sm">Turn visionary ideas into practical solutions that inspire and engage.</p>
-            </div>
+              <div
+                className="bg-grid1_bg bg-center bg-cover bg-no-repeat relative w-[250px] h-[190px] mr-3"
+                style={{
+                  backgroundSize: "250px 190px",
+                }}
+              ></div>
+              <div
+                className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md px-6 max-w-[230px] max-h-[170px] mt-2 pt-2"
+                style={{
+                  border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                  borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
+                  background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
+                  backdropFilter: "blur(10px)", // Blur effect
+                }}
+              >
+                <h1 className="font-orbitron text-xl pb-2">
+                  Creative Solutions
+                </h1>
+                <p className="text-sm">
+                  Turn visionary ideas into practical solutions that inspire and
+                  engage.
+                </p>
+              </div>
             </div>
             <div className="flex flex-row mt-4">
-            <div className=" bg-white bg-opacity-30 backdrop-blur-md text-white rounded-3xl px-6 pt-2 max-w-[230px] max-h-[180px] ml-3 mt-2 mr-3">
-            <h1 className="font-orbitron text-xl pb-2 ">Adaptable
-            Systems</h1>
-              <p className="text-sm">Enjoy flexible and scalable digital solutions designed to evolve with your business needs</p>
-            </div>
-            <div
-              className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[250px] h-[190px] mt-2"
-              style={{
-                backgroundSize: "250px 190px",
-              }}
-            ></div>
+              <div
+                className=" bg-white bg-opacity-30 backdrop-blur-md text-white px-6 pt-2 max-w-[230px] max-h-[180px] ml-3 mt-2 mr-3"
+                style={{
+                  border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                  borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
+                  background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
+                  backdropFilter: "blur(10px)", // Blur effect
+                }}
+              >
+                <h1 className="font-orbitron text-xl pb-2 ">
+                  Adaptable Systems
+                </h1>
+                <p className="text-sm">
+                  Enjoy flexible and scalable digital solutions designed to
+                  evolve with your business needs
+                </p>
+              </div>
+              <div
+                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[250px] h-[190px] mt-2"
+                style={{
+                  backgroundSize: "250px 190px",
+                }}
+              ></div>
             </div>
           </div>
         </div>
