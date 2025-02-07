@@ -34,9 +34,9 @@ const Home = () => {
         <div className="grid grid-cols-2 space-x-5">
           <div className="relative">
             <div
-              className="overflow-hidden z-20 h-[400px] w-[40vw] bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white"
+              className=" z-20 h-[400px] w-[40vw] bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white"
               style={{
-                border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                border: "2px solid transparent", // Ensures no solid color overwrites the gradient
                 borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
                 background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
                 backdropFilter: "blur(10px)", // Blur effect
@@ -104,15 +104,15 @@ const Home = () => {
           <div className="flex flex-col">
             <div className="flex flex-row">
               <div
-                className="bg-grid1_bg bg-center bg-cover bg-no-repeat relative w-[250px] h-[190px] mr-3"
+                className="bg-grid1_bg bg-center bg-cover bg-no-repeat relative w-[20vw] h-[190px] mr-3"
                 style={{
                   backgroundSize: "250px 190px",
                 }}
               ></div>
               <div
-                className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md px-6 max-w-[230px] max-h-[170px] mt-2 pt-2"
+                className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md px-6 max-w-[16vw] max-h-[170px] mt-2 pt-2 cursor-pointer"
                 style={{
-                  border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                  border: "2px solid transparent", // Ensures no solid color overwrites the gradient
                   borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
                   background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
                   backdropFilter: "blur(10px)", // Blur effect
@@ -128,10 +128,13 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-row mt-4">
+              <div >
+                
+              </div>
               <div
-                className=" bg-white bg-opacity-30 backdrop-blur-md text-white px-6 pt-2 max-w-[230px] max-h-[180px] ml-3 mt-2 mr-3"
+                className=" bg-white bg-opacity-30 backdrop-blur-md text-white px-6 pt-2 max-w-[16vw] max-h-[180px] ml-5 mt-2 mr-3 cursor-pointer"
                 style={{
-                  border: "4px solid transparent", // Ensures no solid color overwrites the gradient
+                  border: "2px solid transparent", // Ensures no solid color overwrites the gradient
                   borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
                   background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
                   backdropFilter: "blur(10px)", // Blur effect
@@ -146,7 +149,7 @@ const Home = () => {
                 </p>
               </div>
               <div
-                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[250px] h-[190px] mt-2"
+                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[20vw] h-[190px] mt-2"
                 style={{
                   backgroundSize: "250px 190px",
                 }}
