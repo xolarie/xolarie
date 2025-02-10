@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="h-[100vh] w-[100vw] bg-home-bg px-[10vw] py-10 bg-cover"
+        className="h-[100vh] w-[100vw] bg-home-bg px-[10vw] py-10 bg-cover pt-32"
         style={{
           backgroundSize: "100% 100vh",
         }}
