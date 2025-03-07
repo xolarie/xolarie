@@ -6,13 +6,13 @@ const navDatas = [
             {page: "App Development", path: "/services/app-development"},
             {page: "Backend and Database Management", path: "/services/backend-development"},
             {page: "UI/UX Design", path: "/services/ui-ux"},
-            {page: "Gaming Services", path: "/services/gaming"},
+            {page: "Gaming", path: "/services/gaming"},
             {page: "Animation", path: "/services/animation"},
-            {page: "Robotics and AI Solutions", path: ""},
+            {page: "Robotics and AI Solutions", path: "/services/robotics-ai"},
             {page: "Project management", path: "/services/project-management"},
         ]
     },
-    {page: "solutions",
+    {page: "Solutions",
         dropdown: [
             {page: "Custom Software Solutions", path: "/solutions/software"},
             {page: "E-commerce Platforms", path: "/solutions/ecommerce"},
@@ -23,19 +23,22 @@ const navDatas = [
     {page: "Resources",
         dropdown: [
             {page: "Blog", path: "/resources/blog"},
-            {page: "Open Source Projects", path: "/resources/projects"},
-            {page: "Documentation", path: "/resources/documentation"},
-            {page: "Api Documentation", path: "/resources/api-documentation"}
+            {page: "Tech News & Updates", path: "/resources/tech-news"},
+            // {page: "Open Source Projects", path: "/resources/projects"},
+            // {page: "Documentation", path: "/resources/documentation"},
+            // {page: "API Documentation", path: "/resources/api-documentation"}
         ]
     },
     {page: "Careers",
         dropdown: [
-            {page: "Job Openings", path: "/careers/job-opening"},
+            {page: "Jobs Openings", path: "/careers/job-opening"},
             {page: "Internship", path: "/careers/internship"},
             {page: "Recruitment Event", path: "/careers/recruitment"},
-            {page: "fAQS", parh: "/careers/faqs"}
+            {page: "FAQs", path: "/careers/faqs"}
         ]
-    }
-]
+    },
+    // {page: "Hardware & Gadgets", path: "/solutions/hardware"},
 
-export default navDatas
+];
+
+export default navDatas;
