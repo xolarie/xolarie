@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary1: "#00BCD4",
+        primary2: "#19042D",
+        secondary1: "#39FF14",
+        secondary2: "#3D1B60",
+        tertiary1: "#8CE7FF",
+        tertiary2: "#D9F0FF",
+        tertiary3: "#AEFFA1",
+      },
       fontFamily: {
         orbitron: ['Orbitron', 'sans-serif'],
         inter: ['inter', 'sans-serif']

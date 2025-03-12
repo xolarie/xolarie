@@ -1,6 +1,6 @@
 import logo from "/images/Logo.png";
 import contactButtonImg from "/images/contact_us_buttom.png";
-import navDatas from "../data/NavData";
+import { navDatas } from "../constants";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 

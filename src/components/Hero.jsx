@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Tilt from "react-parallax-tilt"
 import exploreBtn from "/images/explore btn.png";
 import requestBtn from "/images/request btn.png";
 
@@ -12,7 +13,7 @@ const servicesText = [
   "Project mgt",
 ];
 
-const Home = () => {
+const Hero = () => {
   const [serviceTextIndex, setServiceTextIndex] = useState(0);
 
   useEffect(() => {
@@ -32,6 +33,7 @@ const Home = () => {
         }}
       >
         <div className="grid grid-cols-2 space-x-5">
+          <Tilt perspective={1000}>
           <div className="relative">
             <div
               className=" z-20 h-[400px] w-[40vw] bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white"
@@ -100,6 +102,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          </Tilt>
 
           <div className="flex flex-col">
             <div className="flex flex-row">
@@ -109,8 +112,10 @@ const Home = () => {
                   backgroundSize: "250px 190px",
                 }}
               ></div>
-              <div
+              
+              <Tilt
                 className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md px-6 max-w-[16vw] max-h-[170px] mt-2 pt-2 cursor-pointer"
+                tiltEnable={false} scale={1.1} transitionSpeed={2500}
                 style={{
                   border: "2px solid transparent", // Ensures no solid color overwrites the gradient
                   borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
@@ -125,13 +130,14 @@ const Home = () => {
                   Turn visionary ideas into practical solutions that inspire and
                   engage.
                 </p>
-              </div>
+              </Tilt>
+              
             </div>
             <div className="flex flex-row mt-4">
               <div >
                 
               </div>
-              <div
+              <Tilt
                 className=" bg-white bg-opacity-30 backdrop-blur-md text-white px-6 pt-2 max-w-[16vw] max-h-[180px] ml-5 mt-2 mr-3 cursor-pointer"
                 style={{
                   border: "2px solid transparent", // Ensures no solid color overwrites the gradient
@@ -139,6 +145,8 @@ const Home = () => {
                   background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
                   backdropFilter: "blur(10px)", // Blur effect
                 }}
+
+                tiltEnable={false} scale={1.1} transitionSpeed={2500}
               >
                 <h1 className="font-orbitron text-xl pb-2 ">
                   Adaptable Systems
@@ -147,7 +155,7 @@ const Home = () => {
                   Enjoy flexible and scalable digital solutions designed to
                   evolve with your business needs
                 </p>
-              </div>
+              </Tilt>
               <div
                 className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[20vw] h-[190px] mt-2"
                 style={{
@@ -162,4 +170,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

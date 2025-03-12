@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
-import Home from './pages/Home'
-import Services from './pages/services/Services'
+import Home from '.'
+import Services from './pages/services'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Ser' element={<Services />} />
+        {/* <Route path='/Ser' element={<Services />} /> */}
       </Routes>
     </Router>
   )
