@@ -7,7 +7,7 @@ const navDatas = [
             {page: "Backend and Database Management", path: "/services/backend-development"},
             {page: "UI/UX Design", path: "/services/ui-ux"},
             {page: "Gaming", path: "/services/gaming"},
-            {page: "Animation", path: "/services/animation"},
+            {page: "Animations", path: "/services/animations"},
             {page: "Robotics and AI Solutions", path: "/services/robotics-ai"},
             {page: "Project management", path: "/services/project-management"},
         ]

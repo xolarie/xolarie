@@ -3,6 +3,7 @@ import contactButtonImg from "/images/contact_us_buttom.png";
 import { navDatas } from "../constants";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -35,7 +36,7 @@ const Header = () => {
                     >
                       {item.dropdown.map((subItem, subIndex) => (
                         <li key={subIndex} className="p-2 hover:bg-gray-200">
-                          <a href={subItem.path}>{subItem.page}</a>
+                          <Link to={subItem.path}>{subItem.page}</Link>
                         </li>
                       ))}
                     </ul>
