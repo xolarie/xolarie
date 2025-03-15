@@ -1,4 +1,4 @@
-import React from 'react'
+import { SectionWrapper } from "../hoc"
 
 const Career = () => {
   return (
@@ -6,4 +6,5 @@ const Career = () => {
   )
 }
 
-export default Career
+const CareerWrapper = SectionWrapper(Career, "career")
+export  { CareerWrapper }

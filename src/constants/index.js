@@ -84,4 +84,27 @@ const servicesData = [
     },
 ]
 
-export { navDatas, servicesData };
+const SolutionsData = [
+    {
+        title: "Custom Software Solutions",
+        description: "Build tailor-made applications that align with your unique business needs, ensuring efficiency, flexibility, and growth.",
+        image: "/images/css.jpg",
+    },
+    {
+        title: "E-commerce Platforms ",
+        description: "Launch high-performance online stores with seamless payment integration, intuitive UI/UX, and robust backend support.",
+        image: "/images/ecom.jpg",
+    },
+    {
+        title: "AI-Powered Automation",
+        description: "Leverage artificial intelligence to automate workflows, enhance decision-making, and drive productivity like never before.",
+        image: "/images/ai.jpg",
+    },
+    {
+        title: "Enterprise System Integration",
+        description: "Connect and streamline your enterprise applications, ensuring smooth data flow and operational efficiency.",
+        image: "/images/esi.jpg",
+    },
+]
+
+export { navDatas, servicesData, SolutionsData };

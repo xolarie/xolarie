@@ -1,6 +1,5 @@
 import Hero from "./components/Hero"
-import Services from "./components/Services"
-import About from "./components/About"
+import { AboutWrapper,  ServicesWrapper, SolutionsWrapper, ResourcesWrapper, ContactWrapper } from "./components"
 
 
 const Home = () => {
@@ -8,8 +7,13 @@ const Home = () => {
     <div>
         <Hero />
         <div className="bg-primary1">
-        <About />
-        <Services />
+        <AboutWrapper />
+        <ServicesWrapper />
+        <SolutionsWrapper />
+        <ResourcesWrapper />
+        <div>
+        <ContactWrapper />
+        </div>
         </div>
     </div>
   )

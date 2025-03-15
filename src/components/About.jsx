@@ -17,5 +17,5 @@ const About = () => {
   )
 }
 
-const AboutWrapper = SectionWrapper(About, "About")
-export default AboutWrapper
+const AboutWrapper = SectionWrapper(About, "about")
+export { AboutWrapper }
