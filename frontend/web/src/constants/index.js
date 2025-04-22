@@ -1,5 +1,9 @@
 const navDatas = [
-    // {page: "Home", path: "/"},
+    {page: "About Us", 
+        dropdown : [
+        {page: "About Us", path: "/about"}
+        ]
+    },
     {page: "Services",
         dropdown: [
             {page: "Web Development", path: "/services/web-development"},

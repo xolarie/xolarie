@@ -1,35 +1,30 @@
+import { FaArrowRight } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
+import { navDatas } from "../constants";
+
 const Footer = () => {
   return (
-    <footer className="bg-primary2 text-tertiary2 font-orbitron py-8">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
-        {/* Brand Logo */}
-        <h1 className="text-2xl font-bold text-primary1">XOLARIE</h1>
-
-        {/* Navigation Links */}
-        <nav className="flex gap-6 mt-4 md:mt-0 text-tertiary1">
-          <a href="#" className="hover:text-secondary1 transition">Home</a>
-          <a href="#" className="hover:text-secondary1 transition">Services</a>
-          <a href="#" className="hover:text-secondary1 transition">Projects</a>
-          <a href="#" className="hover:text-secondary1 transition">Contact</a>
-        </nav>
-
-        {/* Social Media Icons */}
-        <div className="flex gap-4 mt-4 md:mt-0">
-          <a href="#" className="hover:text-secondary1 transition">
-            <i className="fab fa-twitter text-xl"></i>
-          </a>
-          <a href="#" className="hover:text-secondary1 transition">
-            <i className="fab fa-linkedin text-xl"></i>
-          </a>
-          <a href="#" className="hover:text-secondary1 transition">
-            <i className="fab fa-github text-xl"></i>
-          </a>
-        </div>
+    <footer className="bg-primary2 text-tertiary2 font-orbitron py-8 bottom-0 px-4 w-full">
+      <div className="flex flex-row w-full border-b-2 border-[#8CE7FF]">
+      <h1 className="  text-[#8CE7FF] font-bold w-full">Lets talk</h1>
+      <FaArrowRight className="mr-auto text-[#8CE7FF] " />
       </div>
-
-      {/* Copyright */}
-      <div className="text-center text-sm mt-6 text-tertiary3">
-        © {new Date().getFullYear()} XOLARIE. All rights reserved.
+      <div>
+        <ul className="mt-20 border border-solid-1 border-[#3D1B60] rounded-2xl w-ful divide-y divide-[#3D1B60]">
+          {navDatas.map((data, index) => (
+            <li key={index} className="w-full flex py-5 px-4">
+              <div className="flex flex-row w-full">
+              <p className="font-inter text-sm font-bold text-[#8CE7FF]">{data.page}</p>
+              <button className="ml-auto">
+              <FaPlus className=" text-lg font-bold text-[#00A8BE]  bg-[#301D42] p-1 rounded-full" />
+              </button>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="mt-10">
+        <p className="text-center text-sm font-inter text-[#AEFFA1]">Xolarie connects brilliant tech minds, to work in synergy for ideas to flourish and develop novel solutions. <br /> <br />Copyright &copy; 2025 Xolarie Tech Inc.</p>
       </div>
     </footer>
   );

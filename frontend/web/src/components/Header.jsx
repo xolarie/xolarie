@@ -19,7 +19,6 @@ const Header = () => {
       </div>
       <nav>
         <ul className="flex justify-center items-center relative">
-        <Link to="/about" className=" ml-8 relative flex text-blue-300 mr-8 items-center cursor-pointer">About Us</Link>
           {navDatas.map((item, index) => (
             <li
               key={index}
