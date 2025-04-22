@@ -34,14 +34,11 @@ const Hero = () => {
       >
         <div className="grid grid-cols-2 space-x-5">
           <Tilt perspective={1000}>
-          <div className="relative">
+          <div className="relative rounded-full">
             <div
-              className=" z-20 h-[400px] w-[40vw] bg-white bg-opacity-30 backdrop-blur-md font-orbitron text-4xl p-10 px-16 font-semibold text-white"
+              className=" z-20 h-[400px] w-[40vw] bg-rectangle_bg3 bg-contain bg-no-repeat bg-center font-orbitron text-4xl p-10 px-16 font-semibold text-white"
               style={{
-                border: "2px solid transparent", // Ensures no solid color overwrites the gradient
-                borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
-                background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
-                backdropFilter: "blur(10px)", // Blur effect
+                backgroundSize : "100% 100%"
               }}
             >
               Innovative <br />
@@ -114,13 +111,10 @@ const Hero = () => {
               ></div>
               
               <Tilt
-                className="flex flex-col text-white bg-white bg-opacity-30 backdrop-blur-md px-6 max-w-[16vw] max-h-[170px] mt-2 pt-2 cursor-pointer"
+                className="flex flex-col text-white  px-6 max-w-[16vw] bg-rectangle_bg3 bg-contain bg-center bg-no-repeat max-h-[170px] mt-2 pt-2 cursor-pointer"
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}
                 style={{
-                  border: "2px solid transparent", // Ensures no solid color overwrites the gradient
-                  borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
-                  background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
-                  backdropFilter: "blur(10px)", // Blur effect
+                  backgroundSize : "100% 100%"
                 }}
               >
                 <h1 className="font-orbitron text-xl pb-2">
@@ -138,12 +132,9 @@ const Hero = () => {
                 
               </div>
               <Tilt
-                className=" bg-white bg-opacity-30 backdrop-blur-md text-white px-6 pt-2 max-w-[16vw] max-h-[180px] ml-5 mt-2 mr-3 cursor-pointer"
+                className=" bg-rectangle_bg5 bg-no-repeat bg-contain bg-center text-white px-6 pt-2 max-w-[16vw] max-h-[180px] ml-5 mt-2 mr-3 cursor-pointer"
                 style={{
-                  border: "2px solid transparent", // Ensures no solid color overwrites the gradient
-                  borderImage: "linear-gradient(to bottom, #D9F0FF, #3D1B60) 1", // Gradient applied to border
-                  background: "rgba(255, 255, 255, 0.2)", // Transparent white inside
-                  backdropFilter: "blur(10px)", // Blur effect
+                  backgroundSize : "100% 100%"
                 }}
 
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}

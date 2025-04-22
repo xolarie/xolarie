@@ -24,6 +24,9 @@ export default {
         "home-bg": "url('/images/Hero Bg.png')",
         "grid1_bg": "url('/images/Frame_2.png')",
         "grid4_bg": "url('/images/image_1.png')",
+        "rectangle_bg1": "url('/images/Rectangle 1.png')",
+        "rectangle_bg5": "url('/images/Rectangle 5.png')",
+        "rectangle_bg3": "url('/images/Rectangle 3.png')"
       }
     },
   },

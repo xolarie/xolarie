@@ -13,13 +13,13 @@ const Header = () => {
   };
 
   return (
-    <div className="w-[100vw] h-16 bg-header-bg px-16 flex flex-row items-center absolute z-30">
+    <div className="w-[100vw] h-16 bg-header-bg px-24 flex flex-row items-center absolute z-30">
       <div>
-        <img src={logo} alt="Logo" className="h-14 mr-14" />
+        <img src={logo} alt="Logo" className="h-16" />
       </div>
       <nav>
         <ul className="flex justify-center items-center relative">
-        <Link to="/" className=" ml-8 relative flex text-blue-300 mr-8 items-center cursor-pointer">Home</Link>
+        <Link to="/about" className=" ml-8 relative flex text-blue-300 mr-8 items-center cursor-pointer">About Us</Link>
           {navDatas.map((item, index) => (
             <li
               key={index}
