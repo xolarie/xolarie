@@ -27,16 +27,16 @@ const Hero = () => {
   return (
     <>
       <div
-        className="h-[100vh] w-[100vw] bg-home-bg px-[10vw] py-10 bg-cover pt-32"
+        className="h-[100vh] w-[100vw] bg-home-bg px-[5vw] py-10 bg-cover "
         style={{
           backgroundSize: "100% 100vh",
         }}
       >
-        <div className="grid grid-cols-2 space-x-5">
+        <div className="">
           <Tilt perspective={1000}>
           <div className="relative rounded-full">
             <div
-              className=" z-20 h-[400px] w-[40vw] bg-rectangle_bg3 bg-contain bg-no-repeat bg-center font-orbitron text-4xl p-10 px-16 font-semibold text-white"
+              className=" z-20 h-[320px] w-[90vw] bg-rectangle_bg3 bg-contain bg-no-repeat bg-center font-orbitron text-xl pt-4 px-8 font-semibold text-white"
               style={{
                 backgroundSize : "100% 100%"
               }}
@@ -76,7 +76,7 @@ const Hero = () => {
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.4 }}
                     style={{ position: "absolute" }}
-                    className="text-4xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent"
+                    className="text-3xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent"
                   >
                     {servicesText[serviceTextIndex]}
                   </motion.div>
@@ -89,68 +89,67 @@ const Hero = () => {
                   that drive results and enhance user engagement.
                 </p>
               </div>
-              <div className="grid grid-cols-2 mt-10">
+              <div className="grid grid-cols-2 mt-6">
                 <button>
-                  <img src={exploreBtn} alt="" className="w-40 mr-auto" />
+                  <img src={exploreBtn} alt="" className="w-24 mr-auto" />
                 </button>
                 <button>
-                  <img src={requestBtn} alt="" className="w-40" />
+                  <img src={requestBtn} alt="" className="w-24" />
                 </button>
               </div>
             </div>
           </div>
           </Tilt>
 
-          <div className="flex flex-col">
-            <div className="flex flex-row">
+          <div className="flex flex-col w-[90vw] px-2">
+            <div className="flex flex-row w-full">
               <div
-                className="bg-grid1_bg bg-center bg-cover bg-no-repeat relative w-[20vw] h-[190px] mr-3"
+                className="bg-grid1_bg bg-center bg-contain bg-no-repeat relative w-[40vw] h-[190px] mr-3"
                 style={{
-                  backgroundSize: "250px 190px",
+                  backgroundSize: "100% 80%",
                 }}
               ></div>
               
               <Tilt
-                className="flex flex-col text-white  px-6 max-w-[16vw] bg-rectangle_bg3 bg-contain bg-center bg-no-repeat max-h-[170px] mt-2 pt-2 cursor-pointer"
+                className="flex flex-col text-white  px-6 w-[40vw] bg-rectangle_bg3 bg-contain bg-center bg-no-repeat max-h-[170px] pt-2 cursor-pointer mt-1"
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}
                 style={{
-                  backgroundSize : "100% 100%"
+                  backgroundSize : "100% 80%"
                 }}
               >
-                <h1 className="font-orbitron text-xl pb-2">
+                <h1 className="font-orbitron text-sm pb-2 mt-3">
                   Creative Solutions
                 </h1>
-                <p className="text-sm">
+                <p className="text-[12px]">
                   Turn visionary ideas into practical solutions that inspire and
                   engage.
                 </p>
               </Tilt>
               
             </div>
-            <div className="flex flex-row mt-4">
+            <div className="flex flex-row">
               <div >
-                
               </div>
               <Tilt
-                className=" bg-rectangle_bg5 bg-no-repeat bg-contain bg-center text-white px-6 pt-2 max-w-[16vw] max-h-[180px] ml-5 mt-2 mr-3 cursor-pointer"
+                className=" bg-rectangle_bg5 bg-no-repeat bg-contain bg-center text-white px-6 pt-2 w-[40vw] h-[180px] mt-2 mr-3 cursor-pointer"
                 style={{
-                  backgroundSize : "100% 100%"
+                  backgroundSize : "100% 78%"
                 }}
 
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}
               >
-                <h1 className="font-orbitron text-xl pb-2 ">
+                <h1 className="font-orbitron text-sm pb-2 mt-3 ">
                   Adaptable Systems
                 </h1>
-                <p className="text-sm">
+                <p className="text-[12px]">
                   Enjoy flexible and scalable digital solutions designed to
                   evolve with your business needs
                 </p>
               </Tilt>
               <div
-                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[20vw] h-[190px] mt-2"
+                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[40vw] h-[190px] mt-2"
                 style={{
-                  backgroundSize: "250px 190px",
+                  backgroundSize: "100% 80%",
                 }}
               ></div>
             </div>
