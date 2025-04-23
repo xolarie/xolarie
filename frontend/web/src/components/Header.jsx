@@ -15,7 +15,9 @@ const Header = () => {
   return (
     <div className="w-[100vw] h-16 bg-header-bg px-24 flex flex-row items-center absolute z-30">
       <div>
+        <Link to="/">
         <img src={logo} alt="Logo" className="h-16" />
+        </Link>
       </div>
       <nav>
         <ul className="flex justify-center items-center relative">

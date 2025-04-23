@@ -76,7 +76,7 @@ const Hero = () => {
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.4 }}
                     style={{ position: "absolute" }}
-                    className="text-5xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent"
+                    className="text-4xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent"
                   >
                     {servicesText[serviceTextIndex]}
                   </motion.div>

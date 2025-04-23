@@ -111,4 +111,52 @@ const SolutionsData = [
     },
 ]
 
-export { navDatas, servicesData, SolutionsData };
+const teamMembers = [
+    {
+        name: "Judith Oluchi",
+        role: "Backend Developer",
+        image: ""
+    },
+    {
+        name: "Matti Nimot",
+        role: "Frontend Developer",
+        image: ""
+    },
+    {
+        name: "Olumide Ayomide",
+        role: "Digital Marketting Mgr.",
+        image: ""
+    },
+    {
+        name: "Pinmiloye Daniel",
+        role: "Asst. Digital Marketing Mgr.",
+        image: ""
+    },
+    {
+        name: "Samuel Semako",
+        role: "Game and Animation Developer",
+        image: ""
+    },
+    // {
+    //     name: "",
+    //     role: "",
+    //     image: ""
+    // },
+    // {
+    //     name: "",
+    //     role: "",
+    //     image: ""
+    // },
+    // {
+    //     name: "",
+    //     role: "",
+    //     image: ""
+    // },
+    // {
+    //     name: "",
+    //     role: "",
+    //     image: ""
+    // },
+]
+
+export { navDatas, servicesData, SolutionsData, teamMembers };
