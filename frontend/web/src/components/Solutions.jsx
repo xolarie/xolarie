@@ -6,9 +6,9 @@ import Tilt from "react-parallax-tilt"
 
 const SolutionCard =({index, title, description, image}) => {
     return (
-        <Tilt className="xs:w-[250px] w-full">
-            <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className="w-full p-1 rounded-[20px] bg-gradient-to-br from-secondary1 to-tertiary1">
-                <div className="bg-primary2 rounded-xl py-5 px-4 min-h-[280px] flex justify-evenly items-center flex-col">
+        <Tilt className="">
+            <motion.div variants={fadeIn("right", "spring", 0.5 * index, 0.75)} className="p-1 rounded-[20px] bg-gradient-to-br from-secondary1 to-tertiary1 w-[85vw]">
+                <div className="bg-primary2 rounded-xl py-5 px-4 min-h-[280px] flex justify-evenly items-center flex-col text-center">
                     <img src={image} alt={title} className="h-32 rounded-md" />
                     <h1 className="font-orbitron font-bold text-xl text-tertiary2">{title}</h1>
                     <p className="font-inter text-sm text-tertiary2">{description}</p>
@@ -28,7 +28,7 @@ const Solutions = () => {
         At XOLARIE, we deliver powerful, scalable, and innovative digital solutions to help your business thrive in the modern world.
         </p>
     </motion.div>
-    <div className="mt-20 flex  xs:flex xs:flex-col gap-10">
+    <div className="mt-20 flex  flex-row gap-10 overflow-x-scroll overflow-y-hidden ">
         {SolutionsData.map((solution, index) => (
             <SolutionCard key={solution.title} index={index} {...solution} />
         ))}

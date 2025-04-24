@@ -7,7 +7,7 @@ const Resources = () => {
     <div className="">
       <p className="font-inter text-sm text-white">Explore Our Resources:</p>
       <h1 className="font-orbitron text-3xl font-bold text-white">Resources</h1>
-      <div className="flex flex-row gap-x-10 mt-5 ">
+      <div className="flex gap-x-10 mt-5 flex- flex-col gap-y-8">
       <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
