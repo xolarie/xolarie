@@ -31,7 +31,7 @@ const Header = () => {
               {item.page}
               {item.dropdown && (
                 <>
-                  <IoIosArrowDown />
+                  <IoIosArrowDown className="ml-2" />
                   {activeDropdown === index && (
                     <ul className="absolute top-8 left-0 bg-[#58AAB8] text-white shadow-lg rounded-lg z-10 w-[15vw]"
                     onMouseEnter={() => toggleDropDown(index)}

@@ -27,9 +27,9 @@ const Contact = () => {
   const handleSubmit = (e) => {}
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden lg:flex-row lg:justify-center lg:content-center">
       <motion.div
-      className="flex-[0.75] bg-primary2 p-8 rounded-2xl"
+      className="flex-[0.75] bg-primary2 p-8 rounded-2xl "
       variants={slideIn("left", "tween", 0.2, 1)}>
         <p className=" font-inter text-xl text-white">Get in touch</p>
         <h1 className={`text-4xl font-bold text-white font-orbitron`}>Contact</h1>
@@ -74,7 +74,7 @@ const Contact = () => {
       </motion.div>
       <motion.div
       variants={slideIn("right", "tween", 0.2, 0.1)}
-      className="h-[400px]"
+      className="h-[400px] lg:w-[30vw]"
       >
         <EarthCanvas />
       </motion.div>

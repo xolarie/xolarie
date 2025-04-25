@@ -27,16 +27,16 @@ const Hero = () => {
   return (
     <>
       <div
-        className="h-[100vh] w-[100vw] bg-home-bg px-[5vw] py-10 bg-cover "
+        className="h-[100vh] w-[100vw] bg-home-bg px-[5vw] py-10 bg-cover lg:pt-28 lg:px-[10vw]"
         style={{
           backgroundSize: "100% 100vh",
         }}
       >
-        <div className="">
+        <div className="lg:flex lg:flex-row">
           <Tilt perspective={1000}>
           <div className="relative rounded-full">
             <div
-              className=" z-20 h-[320px] w-[90vw] bg-rectangle_bg3 bg-contain bg-no-repeat bg-center font-orbitron text-xl pt-4 px-8 font-semibold text-white"
+              className=" z-20 h-[320px] w-[90vw] bg-rectangle_bg3 bg-contain bg-no-repeat bg-center font-orbitron text-xl pt-4 px-8 font-semibold text-white lg:w-[40vw] lg:mt-5 lg:h-[32vw] lg:pt-10 lg:text-3xl"
               style={{
                 backgroundSize : "100% 100%"
               }}
@@ -76,14 +76,14 @@ const Hero = () => {
                     exit={{ y: -20, opacity: 0 }}
                     transition={{ duration: 0.4 }}
                     style={{ position: "absolute" }}
-                    className="text-3xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent"
+                    className="text-3xl text-center bg-gradient-to-r from-[#39FF14] to-[#D9F0FF] bg-clip-text text-transparent lg:text-4xl"
                   >
                     {servicesText[serviceTextIndex]}
                   </motion.div>
                 </AnimatePresence>
               </div>
               to drive growth and engagement
-              <div className="text-sm font-inter font-light mt-2">
+              <div className="text-sm font-inter font-light mt-2 lg:text-[12px]">
                 <p>
                   Partner with Xolarie to create intuitive, scalable solutions
                   that drive results and enhance user engagement.
@@ -91,36 +91,36 @@ const Hero = () => {
               </div>
               <div className="grid grid-cols-2 mt-6">
                 <button>
-                  <img src={exploreBtn} alt="" className="w-24 mr-auto" />
+                  <img src={exploreBtn} alt="" className="w-24 mr-auto lg:w-32" />
                 </button>
                 <button>
-                  <img src={requestBtn} alt="" className="w-24" />
+                  <img src={requestBtn} alt="" className="w-24 lg:w-32" />
                 </button>
               </div>
             </div>
           </div>
           </Tilt>
 
-          <div className="flex flex-col w-[90vw] px-2">
+          <div className="flex flex-col w-[90vw] px-2 lg:w-[40vw] lg:space-y-0 ml-auto">
             <div className="flex flex-row w-full">
               <div
-                className="bg-grid1_bg bg-center bg-contain bg-no-repeat relative w-[40vw] h-[190px] mr-3"
+                className="bg-grid1_bg bg-center bg-contain bg-no-repeat relative w-[40vw] h-[190px] lg:h-[220px] mr-3 lg:w-[200px]"
                 style={{
                   backgroundSize: "100% 80%",
                 }}
               ></div>
               
               <Tilt
-                className="flex flex-col text-white  px-6 w-[40vw] bg-rectangle_bg3 bg-contain bg-center bg-no-repeat max-h-[170px] pt-2 cursor-pointer mt-1"
+                className="flex flex-col text-white  px-6 w-[40vw] bg-rectangle_bg3 bg-contain bg-center bg-no-repeat h-[170px] pt-2 cursor-pointer mt-1 lg:w-[200px] lg:h-[200px] lg:pt-6"
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}
                 style={{
                   backgroundSize : "100% 80%"
                 }}
               >
-                <h1 className="font-orbitron text-sm pb-2 mt-3">
+                <h1 className="font-orbitron text-sm pb-2 mt-3 lg:text-xl">
                   Creative Solutions
                 </h1>
-                <p className="text-[12px]">
+                <p className="text-[12px] lg:text-[13px]">
                   Turn visionary ideas into practical solutions that inspire and
                   engage.
                 </p>
@@ -128,26 +128,24 @@ const Hero = () => {
               
             </div>
             <div className="flex flex-row">
-              <div >
-              </div>
               <Tilt
-                className=" bg-rectangle_bg5 bg-no-repeat bg-contain bg-center text-white px-6 pt-2 w-[40vw] h-[180px] mt-2 mr-3 cursor-pointer"
+                className=" bg-rectangle_bg5 bg-no-repeat bg-contain bg-center text-white px-6 pt-2 w-[40vw] h-[180px] mt-2 mr-3 cursor-pointer  lg:w-[200px] lg:h-[210px] lg:pt-6 lg:mt-0 ml-3"
                 style={{
                   backgroundSize : "100% 78%"
                 }}
 
                 tiltEnable={false} scale={1.1} transitionSpeed={2500}
               >
-                <h1 className="font-orbitron text-sm pb-2 mt-3 ">
+                <h1 className="font-orbitron text-sm pb-2 mt-3 lg:text-xl">
                   Adaptable Systems
                 </h1>
-                <p className="text-[12px]">
+                <p className="text-[12px]  lg:text-[13px]">
                   Enjoy flexible and scalable digital solutions designed to
                   evolve with your business needs
                 </p>
               </Tilt>
               <div
-                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[40vw] h-[190px] mt-2"
+                className="bg-grid4_bg bg-center bg-cover bg-no-repeat w-[40vw] h-[190px] mt-2 lg:h-[220px] lg:w-[200px] lg:mt-0"
                 style={{
                   backgroundSize: "100% 80%",
                 }}
