@@ -12,14 +12,14 @@ function WebDev() {
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
         <p className="text-white ">Services</p>
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
-        <Link to="/services/web-development" className="text-[#AEFFA1]">Web development</Link>
+        <Link to="/services/web-development" className="text-[#AEFFA1]">App development</Link>
       </div>
       <div>
         <div>
           <div className="space-y-5">
             <h1 className="font-orbitron text-[#3D1B60] font-extrabold text-2xl">Web Development</h1>
-            <p className="text-[#3D1B60] font-inter font-semibold ">Build responsive, fast, and secure websites with modern technologies.</p>
-            <p className="font-inter text-sm text-[#3D1B60]">At Xolarie, we specialize in crafting responsive, high-performing websites tailored to your business goals. From landing pages to full-fledged platforms, our solutions combine creative design with robust technology.</p>
+            <p className="text-[#3D1B60] font-inter font-semibold ">Create powerful and intuitive mobile applications for both ios and Android.</p>
+            <p className="font-inter text-sm text-[#3D1B60]">We design and build mobile applications that deliver smooth user experiences and drive engagement. Whether Android, iOS, or cross-platform, we create reliable apps that scale.</p>
           </div>
           <SubWeb />
         </div>

@@ -178,4 +178,73 @@ const subWeb = [
     },
 ]
 
-export { navDatas, servicesData, SolutionsData, teamMembers, subWeb };
+const subApp = [
+    {
+        gif: "/images/webgif4",
+        content: "UI/UX design for mobile interfaces"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Native and cross-platform development (Flutter, React Native)"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Backend APIs and cloud integrati"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "App store deployment & optimization"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Post-launch support & maintenance"
+    },
+]
+
+const subBackend = [
+    {
+        gif: "/images/webgif4",
+        content: "REST & GraphQL API developmen"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Secure cloud-based server deployment"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Database architecture (SQL/NoSQL)"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Data migration, backup & optimization"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Authentication & user management systems"
+    },
+]
+
+const subUiux = [
+    {
+        gif: "/images/webgif4",
+        content: "User research and persona development"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Wireframing and low-fidelity prototyping"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "High-fidelity UI design with accessibility in mind"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Interactive prototyping"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Design systems and style guides"
+    },
+]
+
+export { navDatas, servicesData, SolutionsData, teamMembers, subWeb, subApp, subBackend, subUiux };

@@ -1,20 +1,35 @@
+import { Link } from "react-router-dom";
+import { FaGreaterThan } from "react-icons/fa6";
+import CTA from "/images/CTA.png"
+import SubApp from "../../components/SubApp";
+
+
 
 const AppDev = () => {
   return (
-    <div className="min-h-screen p-8 bg-primary2 text-tertiary2 font-inter">
-    <div className="text-center py-12" style={{ backgroundImage: "var(--bg-home-bg)", backgroundSize: "cover" }}>
-      <h1 className="text-4xl font-orbitron text-primary1 font-bold">App Development</h1>
-    </div>
-    <div className="max-w-4xl mx-auto mt-10">
-      <p className="text-lg text-tertiary1 text-center">
-        Building high-performance mobile and desktop applications tailored to your needs.
-      </p>
-      <ul className="mt-6 space-y-4 text-secondary1">
-        <li>✅ Cross-Platform Development</li>
-        <li>✅ User-Friendly Interfaces</li>
-        <li>✅ Scalable Backend Support</li>
-      </ul>
-    </div>
+    <div className="bg-[#00BCD4] px-4">
+      <div className="flex flex-row space-x-2 py-10 font-inter">
+        <Link to="/" className="text-white">Home</Link>
+        <FaGreaterThan className="text-white text-[10px] flex mt-2" />
+        <p className="text-white ">Services</p>
+        <FaGreaterThan className="text-white text-[10px] flex mt-2" />
+        <Link to="/services/app-development" className="text-[#AEFFA1]">App development</Link>
+      </div>
+      <div>
+        <div>
+          <div className="space-y-5">
+            <h1 className="font-orbitron text-[#3D1B60] font-extrabold text-2xl">Web Development</h1>
+            <p className="text-[#3D1B60] font-inter font-semibold ">Build responsive, fast, and secure websites with modern technologies.</p>
+            <p className="font-inter text-sm text-[#3D1B60]">At Xolarie, we specialize in crafting responsive, high-performing websites tailored to your business goals. From landing pages to full-fledged platforms, our solutions combine creative design with robust technology.</p>
+          </div>
+          <SubApp />
+        </div>
+      </div>
+      <div className="relative py-14">
+        <img src={CTA} alt="" />
+        <button className="absolute bottom-0 h-14 w-[45vw] mb-16">
+        </button>
+      </div>
   </div>
   )
 }

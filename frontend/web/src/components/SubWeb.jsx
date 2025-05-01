@@ -6,7 +6,6 @@ const SubWeb = () => {
         return index % 2 === 0;
     }
 
-    console.log(alignTextRight);
     
   return (
     <div>
