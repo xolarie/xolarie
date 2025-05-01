@@ -115,27 +115,27 @@ const teamMembers = [
     {
         name: "Judith Oluchi",
         role: "Backend Developer",
-        image: ""
+        image: "/images/oluchi.png"
     },
     {
         name: "Matti Nimot",
         role: "Frontend Developer",
-        image: ""
+        image: "/images/oluchi.png"
     },
     {
         name: "Olumide Ayomide",
         role: "Digital Marketting Mgr.",
-        image: ""
+        image: "/images/oluchi.png"
     },
     {
         name: "Pinmiloye Daniel",
         role: "Asst. Digital Marketing Mgr.",
-        image: ""
+        image: "/images/oluchi.png"
     },
     {
         name: "Samuel Semako",
         role: "Game and Animation Developer",
-        image: ""
+        image: "/images/oluchi.png"
     },
     // {
     //     name: "",
@@ -159,4 +159,23 @@ const teamMembers = [
     // },
 ]
 
-export { navDatas, servicesData, SolutionsData, teamMembers };
+const subWeb = [
+    {
+        gif: "/images/webgif1",
+        content: "Custom website design and development"
+    },
+    {
+        gif: "/images/webgif2",
+        content: "Responsive UI/UX for all screen sizes"
+    },
+    {
+        gif: "/images/webgif3",
+        content: "SEO-optimized structure for better visibility"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Fast loading and secure websites"
+    },
+]
+
+export { navDatas, servicesData, SolutionsData, teamMembers, subWeb };
