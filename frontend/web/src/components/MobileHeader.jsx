@@ -4,16 +4,19 @@ import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { navDatas } from "../constants";
 
 const MobileHeader = () => {
 
     const [navBarOpen, setNavBarOpen] = useState(false)
+    const [activeDropDown, setActive,DropDown] = useState(false)
 
     const toggleNavBar = ( ) => {
         setNavBarOpen(!navBarOpen)
     }
 
   return (
+    <>
     <div className = "h-[80px] w-[100vw] bg-[#00A8BE] px-1 content-center justify-center flex flex-row overflow-x-hidden">
         <Link to="/">
         <img src={logo} alt="xolarie logo" className="h-14 mr-auto"  />
@@ -27,6 +30,25 @@ const MobileHeader = () => {
             </div>
         </div>
     </div>
+    <ul className="flex flex-col w-[50vw]  absolute right-0 z-10 border pl-4 divide-y bg-[#00A8BE] ">
+    {
+        navBarOpen && (
+            navDatas.map((data, index) => (
+                <li key={index} className="py-4 ">
+                    <div>
+                        <button className="font-inter text-primary2 font-bold">{data.page}</button>
+                    </div>
+                    {
+                        activeDropDown && (
+                            <li key={index}>{data.dropdown}</li>
+                        )
+                    }
+                </li>
+            ))
+        )
+    }
+            </ul>
+    </>
   )
 }
 
