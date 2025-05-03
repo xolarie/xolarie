@@ -12,7 +12,7 @@ const UiuxDesign = () => {
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
         <p className="text-white ">Services</p>
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
-        <Link to="/services/backend-development" className="text-[#AEFFA1]">UI/UX design</Link>
+        <Link to="/services/ui-ux" className="text-[#AEFFA1]">UI/UX design</Link>
       </div>
       <div>
         <div>

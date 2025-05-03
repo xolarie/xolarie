@@ -247,4 +247,96 @@ const subUiux = [
     },
 ]
 
-export { navDatas, servicesData, SolutionsData, teamMembers, subWeb, subApp, subBackend, subUiux };
+const subGame = [
+    {
+        gif: "/images/webgif4",
+        content: "Concept ideation and character design"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "2D/3D game development (Unity, Unreal Engine)"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Game logic, scoring, and physics integration"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Cross-platform publishing (iOS, Android, Web)"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Asset creation and sound integration"
+    },
+]
+
+const subAnimation = [
+    {
+        gif: "/images/webgif4",
+        content: "2D & 3D animation"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Motion graphics for web, apps, and videos"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Animated product explainers"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Logo and brand intro animations"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Storyboarding and script assistance"
+    },
+]
+
+const subRobotics = [
+    {
+        gif: "/images/webgif4",
+        content: "AI model development (ML, DL, NLP)"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Robotic system integration and prototyping"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Computer vision and object detection"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "oT & sensor-based automation"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "AI consulting for product ideas"
+    },
+]
+
+const subProjectMgt = [
+    {
+        gif: "/images/webgif4",
+        content: "Project planning and roadmap development"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Agile & Scrum project execution"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Team coordination and task tracking"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "lient & stakeholder reporting"
+    },
+    {
+        gif: "/images/webgif4",
+        content: "Risk management and delivery assurance"
+    },
+]
+
+export { navDatas, servicesData, SolutionsData, teamMembers, subWeb, subApp, subBackend, subUiux, subGame, subAnimation, subRobotics, subProjectMgt };

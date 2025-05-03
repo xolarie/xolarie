@@ -1,20 +1,34 @@
+import { Link } from "react-router-dom";
+import { FaGreaterThan } from "react-icons/fa6";
+import CTA from "/images/CTA.png"
+import SubProjectMgt from "../../components/SubProjectMgt";
+
 
 const ProjectsMgt = () => {
   return (
-    <div className="min-h-screen p-8 bg-primary2 text-tertiary2 font-inter">
-    <div className="text-center py-12" style={{ backgroundImage: "var(--bg-home-bg)", backgroundSize: "cover" }}>
-      <h1 className="text-4xl font-orbitron text-primary1 font-bold">Project Management</h1>
-    </div>
-    <div className="max-w-4xl mx-auto mt-10">
-      <p className="text-lg text-tertiary1 text-center">
-        Streamlining software development workflows for efficiency and success.
-      </p>
-      <ul className="mt-6 space-y-4 text-secondary1">
-        <li>✅ Agile & Scrum Methodologies</li>
-        <li>✅ Resource Planning</li>
-        <li>✅ Risk Management</li>
-      </ul>
-    </div>
+    <div className="bg-[#00BCD4] px-4">
+      <div className="flex flex-row space-x-2 py-10 font-inter">
+        <Link to="/" className="text-white">Home</Link>
+        <FaGreaterThan className="text-white text-[10px] flex mt-2" />
+        <p className="text-white ">Services</p>
+        <FaGreaterThan className="text-white text-[10px] flex mt-2" />
+        <Link to="/services/project-management" className="text-[#AEFFA1]"> Project management</Link>
+      </div>
+      <div>
+        <div>
+          <div className="space-y-5">
+            <h1 className="font-orbitron text-[#3D1B60] font-extrabold text-2xl"> Project management</h1>
+            <p className="text-[#3D1B60] font-inter font-semibold ">Efficiently manage projects from concept to completion with our expert guidance and tools.</p>
+            <p className="font-inter text-sm text-[#3D1B60]">Our experienced project managers ensure smooth execution from idea to launch. We combine agile methods with clear communication and stakeholder alignment to drive progress and deliver results.</p>
+          </div>
+          <SubProjectMgt />
+        </div>
+      </div>
+      <div className="relative py-14">
+        <img src={CTA} alt="" />
+        <button className="absolute bottom-0 h-14 w-[45vw] mb-16">
+        </button>
+      </div>
   </div>
   )
 }
