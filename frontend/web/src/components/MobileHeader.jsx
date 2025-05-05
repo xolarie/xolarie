@@ -1,15 +1,32 @@
 import logo from "/images/Logo.png";
 import contactUs from "/images/Contact.png"
+import { useState, useEffect, useRef } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { navDatas } from "../constants";
 
 const MobileHeader = () => {
 
+    const navRef = useRef();
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setNavBarOpen(false);
+                setActiveDropDown(null);
+            }
+        };
+    
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     const [navBarOpen, setNavBarOpen] = useState(false)
-    const [activeDropDown, setActive,DropDown] = useState(false)
+    const [activeDropDown, setActiveDropDown] = useState(null)
 
     const toggleNavBar = ( ) => {
         setNavBarOpen(!navBarOpen)
@@ -30,18 +47,22 @@ const MobileHeader = () => {
             </div>
         </div>
     </div>
-    <ul className="flex flex-col w-[50vw]  absolute right-0 z-10 border pl-4 divide-y bg-[#00A8BE] ">
+    <ul ref={navRef} className="flex flex-col w-[60vw]  absolute right-0 z-10 border pl-4 divide-y bg-[#00A8BE] ">
     {
         navBarOpen && (
             navDatas.map((data, index) => (
-                <li key={index} className="py-4 ">
-                    <div>
-                        <button className="font-inter text-primary2 font-bold">{data.page}</button>
+                <li key={index} className="py-4 w-full">
+                    <div className="w-full">
+                        <button className="font-inter text-blue-300 font-bold flex w-full" onClick={()=> setActiveDropDown(index === activeDropDown ? null : index)} ><p>{data.page}</p><IoIosArrowDown className="ml-auto" /></button>
                     </div>
                     {
-                        activeDropDown && (
-                            <li key={index}>{data.dropdown}</li>
-                        )
+                        activeDropDown === index && ( <ul className="ml-4 mt-2 space-y-3 divide-y-2">
+                            {data.dropdown.map((item, subIndex) => (
+                              <li key={subIndex} className="font-inter text-white">
+                                <Link to={item.path}> {item.page}</Link>
+                              </li>
+                            ))}
+                          </ul>)
                     }
                 </li>
             ))

@@ -113,6 +113,11 @@ const SolutionsData = [
 
 const teamMembers = [
     {
+        name: "Mathew Solomon",
+        role: "Software Engineer",
+        image: "/images/solomon.png"
+    },
+    {
         name: "Judith Oluchi",
         role: "Backend Developer",
         image: "/images/oluchi.png"
@@ -120,28 +125,23 @@ const teamMembers = [
     {
         name: "Matti Nimot",
         role: "Frontend Developer",
-        image: "/images/oluchi.png"
+        image: "/images/nimot.png"
+    },
+    {
+        name: "Adegbaju Marvellous",
+        role: "UI/UX Designer",
+        image: "/images/marvelleous.png"
     },
     {
         name: "Olumide Ayomide",
         role: "Digital Marketting Mgr.",
-        image: "/images/oluchi.png"
+        image: "/images/ayo.png"
     },
     {
         name: "Pinmiloye Daniel",
         role: "Asst. Digital Marketing Mgr.",
-        image: "/images/oluchi.png"
+        image: "/images/daniel.png"
     },
-    {
-        name: "Samuel Semako",
-        role: "Game and Animation Developer",
-        image: "/images/oluchi.png"
-    },
-    // {
-    //     name: "",
-    //     role: "",
-    //     image: ""
-    // },
     // {
     //     name: "",
     //     role: "",
