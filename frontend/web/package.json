@@ -22,6 +22,7 @@
     "react-parallax-tilt": "^1.7.286",
     "react-router-dom": "^7.1.5",
     "react-vertical-timeline-component": "^3.5.3",
+    "tailwind-scrollbar-hide": "^2.0.0",
     "three": "^0.174.0"
   },
   "devDependencies": {

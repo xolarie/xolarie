@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { FaGreaterThan } from "react-icons/fa6";
-import CTA from "/images/CTA.png"
+import CTA from "../../components/Cta"
 import SubProjectMgt from "../../components/SubProjectMgt";
 
 
 const ProjectsMgt = () => {
   return (
-    <div className="bg-[#00BCD4] px-4">
+    <div className="bg-[#00BCD4] px-4 lg:px-24">
       <div className="flex flex-row space-x-2 py-10 font-inter">
         <Link to="/" className="text-white">Home</Link>
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
@@ -24,11 +24,7 @@ const ProjectsMgt = () => {
           <SubProjectMgt />
         </div>
       </div>
-      <div className="relative py-14">
-        <img src={CTA} alt="" />
-        <button className="absolute bottom-0 h-14 w-[45vw] mb-16">
-        </button>
-      </div>
+<CTA />
   </div>
   )
 }

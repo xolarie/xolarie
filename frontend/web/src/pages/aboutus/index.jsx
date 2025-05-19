@@ -4,7 +4,7 @@ import Team from "../../components/Team";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#00BCD4] px-4">
+    <div className="bg-[#00BCD4] px-4 lg:px-24">
       <div className="flex flex-row space-x-2 py-10 font-inter">
         <Link to="/" className="text-white">Home</Link>
         <FaGreaterThan className="text-white text-[10px] flex mt-2" />
